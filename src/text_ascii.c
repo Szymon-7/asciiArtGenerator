@@ -4,12 +4,18 @@
 
 char **get_ascii_char(Style *style, char c) {
     if (c == ' ')
-        return style->chars[26]; 
-    if (c >= 'a' && c <= 'z')
-        c = c - 'a' + 'A';
+        return style->chars[62];
+
     if (c >= 'A' && c <= 'Z')
         return style->chars[c - 'A'];
-    return style->chars[26];
+
+    if (c >= 'a' && c <= 'z')
+        return style->chars[(c - 'a') + 26];
+
+    if (c >= '0' && c <= '9')
+        return style->chars[(c - '0') + 52];
+
+    return style->chars[62];
 }
 
 void print_art(Style *style, char *str, int scale) {

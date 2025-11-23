@@ -1,7 +1,7 @@
 #ifndef TEXT_ASCII_H
 #define TEXT_ASCII_H
 
-#define NUM_CHARS 27
+#define NUM_CHARS 63
 
 typedef struct {
     int height;

@@ -234,6 +234,330 @@ char *LETTER_Z[] = {
     " #     ",
     "#######"
 };
+char *LETTER_a[] = {
+    "       ",
+    "       ",
+    " ##### ",
+    "      #",
+    " ######",
+    "#     #",
+    " ##### "
+};
+char *LETTER_b[] = {
+    "#      ",
+    "#      ",
+    "###### ",
+    "#     #",
+    "#     #",
+    "#     #",
+    "###### "
+};
+char *LETTER_c[] = {
+    "       ",
+    "       ",
+    " ##### ",
+    "#      ",
+    "#      ",
+    "#      ",
+    " ##### "
+};
+char *LETTER_d[] = {
+    "      #",
+    "      #",
+    " ######",
+    "#     #",
+    "#     #",
+    "#     #",
+    " ######"
+};
+char *LETTER_e[] = {
+    "       ",
+    "       ",
+    " ##### ",
+    "#     #",
+    "#######",
+    "#      ",
+    " ##### "
+};
+char *LETTER_f[] = {
+    "   ### ",
+    "  #    ",
+    " ####  ",
+    "  #    ",
+    "  #    ",
+    "  #    ",
+    "  #    "
+};
+char *LETTER_g[] = {
+    "       ",
+    "       ",
+    " ##### ",
+    "#     #",
+    " ######",
+    "      #",
+    " ##### "
+};
+char *LETTER_h[] = {
+    "#      ",
+    "#      ",
+    "###### ",
+    "#     #",
+    "#     #",
+    "#     #",
+    "#     #"
+};
+char *LETTER_i[] = {
+    "   #   ",
+    "       ",
+    "   #   ",
+    "   #   ",
+    "   #   ",
+    "   #   ",
+    "   #   "
+};
+char *LETTER_j[] = {
+    "     # ",
+    "       ",
+    "     # ",
+    "     # ",
+    "     # ",
+    "#    # ",
+    " ####  "
+};
+char *LETTER_k[] = {
+    "#      ",
+    "#   #  ",
+    "#  #   ",
+    "###    ",
+    "#  #   ",
+    "#   #  ",
+    "#    # "
+};
+char *LETTER_l[] = {
+    "  #    ",
+    "  #    ",
+    "  #    ",
+    "  #    ",
+    "  #    ",
+    "  #    ",
+    "   ##  "
+};
+char *LETTER_m[] = {
+    "       ",
+    "       ",
+    "##  ## ",
+    "# ## # ",
+    "# ## # ",
+    "#    # ",
+    "#    # "
+};
+char *LETTER_n[] = {
+    "       ",
+    "       ",
+    "#####  ",
+    "#    # ",
+    "#    # ",
+    "#    # ",
+    "#    # "
+};
+char *LETTER_o[] = {
+    "       ",
+    "       ",
+    " ##### ",
+    "#     #",
+    "#     #",
+    "#     #",
+    " ##### "
+};
+char *LETTER_p[] = {
+    "       ",
+    "       ",
+    "###### ",
+    "#     #",
+    "###### ",
+    "#      ",
+    "#      "
+};
+char *LETTER_q[] = {
+    "       ",
+    "       ",
+    " ######",
+    "#     #",
+    "#     #",
+    " ######",
+    "      #"
+};
+char *LETTER_r[] = {
+    "       ",
+    "       ",
+    "#####  ",
+    "#    # ",
+    "#      ",
+    "#      ",
+    "#      "
+};
+char *LETTER_s[] = {
+    "       ",
+    "       ",
+    " ##### ",
+    "#      ",
+    " ##### ",
+    "      #",
+    " ##### "
+};
+char *LETTER_t[] = {
+    "  #    ",
+    "  #    ",
+    "#####  ",
+    "  #    ",
+    "  #    ",
+    "  #    ",
+    "   ### "
+};
+char *LETTER_u[] = {
+    "       ",
+    "       ",
+    "#     #",
+    "#     #",
+    "#     #",
+    "#     #",
+    " ##### "
+};
+char *LETTER_v[] = {
+    "       ",
+    "       ",
+    "#     #",
+    "#     #",
+    " #   # ",
+    "  # #  ",
+    "   #   "
+};
+char *LETTER_w[] = {
+    "       ",
+    "       ",
+    "#     #",
+    "#  #  #",
+    "# # # #",
+    "##   ##",
+    "#     #"
+};
+char *LETTER_x[] = {
+    "       ",
+    "       ",
+    " #   # ",
+    "  # #  ",
+    "   #   ",
+    "  # #  ",
+    " #   # "
+};
+char *LETTER_y[] = {
+    "       ",
+    "       ",
+    "#     #",
+    "#     #",
+    " ######",
+    "      #",
+    " ##### "
+};
+char *LETTER_z[] = {
+    "       ",
+    "       ",
+    "#######",
+    "    #  ",
+    "   #   ",
+    "  #    ",
+    "#######"
+};
+char *DIGIT_0[] = {
+    " ##### ",
+    "#     #",
+    "#   # #",
+    "#  #  #",
+    "# #   #",
+    "#     #",
+    " ##### "
+};
+char *DIGIT_1[] = {
+    "  ##   ",
+    " # #   ",
+    "   #   ",
+    "   #   ",
+    "   #   ",
+    "   #   ",
+    " ##### "
+};
+char *DIGIT_2[] = {
+    " ##### ",
+    "#     #",
+    "      #",
+    "  #### ",
+    " #     ",
+    "#      ",
+    "#######"
+};
+char *DIGIT_3[] = {
+    " ##### ",
+    "#     #",
+    "      #",
+    "  #### ",
+    "      #",
+    "#     #",
+    " ##### "
+};
+char *DIGIT_4[] = {
+    "#    # ",
+    "#    # ",
+    "#    # ",
+    "#######",
+    "     # ",
+    "     # ",
+    "     # "
+};
+char *DIGIT_5[] = {
+    "#######",
+    "#      ",
+    "#      ",
+    "###### ",
+    "      #",
+    "#     #",
+    " ##### "
+};
+char *DIGIT_6[] = {
+    " ######",
+    "#      ",
+    "#      ",
+    "###### ",
+    "#     #",
+    "#     #",
+    " ##### "
+};
+char *DIGIT_7[] = {
+    "#######",
+    "     # ",
+    "    #  ",
+    "   #   ",
+    "  #    ",
+    "  #    ",
+    "  #    "
+};
+char *DIGIT_8[] = {
+    " ##### ",
+    "#     #",
+    "#     #",
+    " ##### ",
+    "#     #",
+    "#     #",
+    " ##### "
+};
+char *DIGIT_9[] = {
+    " ##### ",
+    "#     #",
+    "#     #",
+    " ######",
+    "      #",
+    "      #",
+    " ##### "
+};
 char *LETTER_SPACE[] = {
     "       ",
     "       ",
@@ -248,13 +572,22 @@ Style DEFAULT = {
     .height = 7,
     .width = 7,
     .chars = {
-        LETTER_A, LETTER_B, LETTER_C, LETTER_D,
-        LETTER_E, LETTER_F, LETTER_G, LETTER_H,
-        LETTER_I, LETTER_J, LETTER_K, LETTER_L,
-        LETTER_M, LETTER_N, LETTER_O, LETTER_P,
-        LETTER_Q, LETTER_R, LETTER_S, LETTER_T,
-        LETTER_U, LETTER_V, LETTER_W, LETTER_X,
-        LETTER_Y, LETTER_Z, LETTER_SPACE
+        LETTER_A, LETTER_B, LETTER_C, LETTER_D, LETTER_E, LETTER_F,
+        LETTER_G, LETTER_H, LETTER_I, LETTER_J, LETTER_K, LETTER_L,
+        LETTER_M, LETTER_N, LETTER_O, LETTER_P, LETTER_Q, LETTER_R,
+        LETTER_S, LETTER_T, LETTER_U, LETTER_V, LETTER_W, LETTER_X,
+        LETTER_Y, LETTER_Z,
+
+        LETTER_a, LETTER_b, LETTER_c, LETTER_d, LETTER_e, LETTER_f,
+        LETTER_g, LETTER_h, LETTER_i, LETTER_j, LETTER_k, LETTER_l,
+        LETTER_m, LETTER_n, LETTER_o, LETTER_p, LETTER_q, LETTER_r,
+        LETTER_s, LETTER_t, LETTER_u, LETTER_v, LETTER_w, LETTER_x,
+        LETTER_y, LETTER_z,
+
+        DIGIT_0, DIGIT_1, DIGIT_2, DIGIT_3, DIGIT_4,
+        DIGIT_5, DIGIT_6, DIGIT_7, DIGIT_8, DIGIT_9,
+
+        LETTER_SPACE
     }
 };
 
