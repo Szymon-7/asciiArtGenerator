@@ -10,4 +10,4 @@ Run `make cleaner` to delete all .o, .so/.dylib, and executable files
 
 ## Usage
 
-`./bin/ascii_to_art <INPUT>`
+`./bin/ascii_to_art <INPUT> [SCALE]`
