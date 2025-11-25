@@ -26,9 +26,10 @@ void print_art(Style *style, char *str, int scale) {
             for (int i = 0; i < len; i++) {
                 char **ascii_char = get_ascii_char(style, str[i]);
                 if (ascii_char != NULL) {
-                    for (int col = 0; col < style->width; col++) {
+                    char *row_str = ascii_char[row];
+                    for (int col = 0; row_str[col] != '\0'; col++) {
                         for (int scol = 0; scol < scale; scol++) {
-                            putchar(ascii_char[row][col]);
+                            putchar(row_str[col]);
                         }
                     }
                     putchar(' ');
@@ -39,6 +40,3 @@ void print_art(Style *style, char *str, int scale) {
     }
 }
 
-void test_input(char *str) {
-    printf("Input: %s\n", str);
-}

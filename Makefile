@@ -17,14 +17,17 @@ bin/ascii_to_art: obj/main.o lib/libtext_ascii.$(LIB_EXT)
 obj/main.o: src/main.c | dirs
 	$(CC) $(CFLAGS) -c src/main.c -o obj/main.o
 
-lib/libtext_ascii.$(LIB_EXT): obj/text_ascii.o obj/style_default.o
-	$(CC) $(CFLAGS) -shared obj/text_ascii.o obj/style_default.o -o lib/libtext_ascii.$(LIB_EXT)
+lib/libtext_ascii.$(LIB_EXT): obj/text_ascii.o obj/style_default.o obj/style_ansi.o
+	$(CC) $(CFLAGS) -shared obj/text_ascii.o obj/style_default.o obj/style_ansi.o -o lib/libtext_ascii.$(LIB_EXT)
 
 obj/text_ascii.o: src/text_ascii.c
 	$(CC) $(CFLAGS) -c -fPIC src/text_ascii.c -o obj/text_ascii.o
 
 obj/style_default.o: src/style_default.c
 	$(CC) $(CFLAGS) -c -fPIC src/style_default.c -o obj/style_default.o
+
+obj/style_ansi.o: src/style_ansi.c
+	$(CC) $(CFLAGS) -c -fPIC src/style_ansi.c -o obj/style_ansi.o
 
 .PHONY: dirs clean cleaner
 

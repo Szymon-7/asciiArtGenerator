@@ -10,6 +10,7 @@ typedef struct {
 } Style;
 
 extern Style DEFAULT;
+extern Style ANSI;
 
 char **get_ascii_char(Style *style, char c);
 void print_art(Style *style, char *str, int scale);
