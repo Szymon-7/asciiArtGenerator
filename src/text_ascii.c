@@ -3,6 +3,22 @@
 #include <string.h>
 
 char **get_ascii_char(Style *style, char c) {
+    if (style == &ANSI) {
+        if (c == ' ')
+            return style->chars[36];
+
+        if (c >= 'A' && c <= 'Z')
+            return style->chars[(c - 'A')];
+
+        if (c >= 'a' && c <= 'z')
+            return style->chars[(c - 'a')];
+
+        if (c >= '0' && c <= '9')
+            return style->chars[(c - '0') + 26];
+
+        return style->chars[36];
+    }
+
     if (c == ' ')
         return style->chars[62];
 

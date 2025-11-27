@@ -1,6 +1,6 @@
 #include "text_ascii.h"
 
-char *LETTER_A[] = {
+char *DEFAULT_A[] = {
     "  ###  ",
     " #   # ",
     "#     #",
@@ -9,7 +9,7 @@ char *LETTER_A[] = {
     "#     #",
     "#     #"
 };
-char *LETTER_B[] = {
+char *DEFAULT_B[] = {
     "###### ",
     "#     #",
     "#     #",
@@ -18,7 +18,7 @@ char *LETTER_B[] = {
     "#     #",
     "###### "
 };
-char *LETTER_C[] = {
+char *DEFAULT_C[] = {
     " ######",
     "#      ",
     "#      ",
@@ -27,7 +27,7 @@ char *LETTER_C[] = {
     "#      ",
     " ######"
 };
-char *LETTER_D[] = {
+char *DEFAULT_D[] = {
     "#####  ",
     "#    # ",
     "#     #",
@@ -36,7 +36,7 @@ char *LETTER_D[] = {
     "#    # ",
     "#####  "
 };
-char *LETTER_E[] = {
+char *DEFAULT_E[] = {
     "#######",
     "#      ",
     "#      ",
@@ -45,7 +45,7 @@ char *LETTER_E[] = {
     "#      ",
     "#######"
 };
-char *LETTER_F[] = {
+char *DEFAULT_F[] = {
     "#######",
     "#      ",
     "#      ",
@@ -54,7 +54,7 @@ char *LETTER_F[] = {
     "#      ",
     "#      "
 };
-char *LETTER_G[] = {
+char *DEFAULT_G[] = {
     " ######",
     "#      ",
     "#      ",
@@ -63,7 +63,7 @@ char *LETTER_G[] = {
     "#     #",
     " ##### "
 };
-char *LETTER_H[] = {
+char *DEFAULT_H[] = {
     "#     #",
     "#     #",
     "#     #",
@@ -72,7 +72,7 @@ char *LETTER_H[] = {
     "#     #",
     "#     #"
 };
-char *LETTER_I[] = {
+char *DEFAULT_I[] = {
     "#######",
     "   #   ",
     "   #   ",
@@ -81,7 +81,7 @@ char *LETTER_I[] = {
     "   #   ",
     "#######"
 };
-char *LETTER_J[] = {
+char *DEFAULT_J[] = {
     "#######",
     "     # ",
     "     # ",
@@ -90,7 +90,7 @@ char *LETTER_J[] = {
     "#    # ",
     " ####  "
 };
-char *LETTER_K[] = {
+char *DEFAULT_K[] = {
     "#    # ",
     "#   #  ",
     "#  #   ",
@@ -99,7 +99,7 @@ char *LETTER_K[] = {
     "#   #  ",
     "#    # "
 };
-char *LETTER_L[] = {
+char *DEFAULT_L[] = {
     "#      ",
     "#      ",
     "#      ",
@@ -108,7 +108,7 @@ char *LETTER_L[] = {
     "#      ",
     "#######"
 };
-char *LETTER_M[] = {
+char *DEFAULT_M[] = {
     "#     #",
     "##   ##",
     "# # # #",
@@ -117,7 +117,7 @@ char *LETTER_M[] = {
     "#     #",
     "#     #"
 };
-char *LETTER_N[] = {
+char *DEFAULT_N[] = {
     "#     #",
     "##    #",
     "# #   #",
@@ -126,7 +126,7 @@ char *LETTER_N[] = {
     "#    ##",
     "#     #"
 };
-char *LETTER_O[] = {
+char *DEFAULT_O[] = {
     " ##### ",
     "#     #",
     "#     #",
@@ -135,7 +135,7 @@ char *LETTER_O[] = {
     "#     #",
     " ##### "
 };
-char *LETTER_P[] = {
+char *DEFAULT_P[] = {
     "###### ",
     "#     #",
     "#     #",
@@ -144,7 +144,7 @@ char *LETTER_P[] = {
     "#      ",
     "#      "
 };
-char *LETTER_Q[] = {
+char *DEFAULT_Q[] = {
     " ##### ",
     "#     #",
     "#     #",
@@ -153,7 +153,7 @@ char *LETTER_Q[] = {
     "#    # ",
     " #### #"
 };
-char *LETTER_R[] = {
+char *DEFAULT_R[] = {
     "###### ",
     "#     #",
     "#     #",
@@ -162,7 +162,7 @@ char *LETTER_R[] = {
     "#    # ",
     "#     #"
 };
-char *LETTER_S[] = {
+char *DEFAULT_S[] = {
     " ######",
     "#      ",
     "#      ",
@@ -171,7 +171,7 @@ char *LETTER_S[] = {
     "      #",
     "###### "
 };
-char *LETTER_T[] = {
+char *DEFAULT_T[] = {
     "#######",
     "   #   ",
     "   #   ",
@@ -180,7 +180,7 @@ char *LETTER_T[] = {
     "   #   ",
     "   #   "
 };
-char *LETTER_U[] = {
+char *DEFAULT_U[] = {
     "#     #",
     "#     #",
     "#     #",
@@ -189,7 +189,7 @@ char *LETTER_U[] = {
     "#     #",
     " ##### "
 };
-char *LETTER_V[] = {
+char *DEFAULT_V[] = {
     "#     #",
     "#     #",
     "#     #",
@@ -198,7 +198,7 @@ char *LETTER_V[] = {
     "  # #  ",
     "   #   "
 };
-char *LETTER_W[] = {
+char *DEFAULT_W[] = {
     "#     #",
     "#     #",
     "#     #",
@@ -207,7 +207,7 @@ char *LETTER_W[] = {
     "##   ##",
     "#     #"
 };
-char *LETTER_X[] = {
+char *DEFAULT_X[] = {
     "#     #",
     " #   # ",
     "  # #  ",
@@ -216,7 +216,7 @@ char *LETTER_X[] = {
     " #   # ",
     "#     #"
 };
-char *LETTER_Y[] = {
+char *DEFAULT_Y[] = {
     "#     #",
     " #   # ",
     "  # #  ",
@@ -225,7 +225,7 @@ char *LETTER_Y[] = {
     "   #   ",
     "   #   "
 };
-char *LETTER_Z[] = {
+char *DEFAULT_Z[] = {
     "#######",
     "     # ",
     "    #  ",
@@ -234,7 +234,7 @@ char *LETTER_Z[] = {
     " #     ",
     "#######"
 };
-char *LETTER_a[] = {
+char *DEFAULT_a[] = {
     "       ",
     "       ",
     " ##### ",
@@ -243,7 +243,7 @@ char *LETTER_a[] = {
     "#     #",
     " ##### "
 };
-char *LETTER_b[] = {
+char *DEFAULT_b[] = {
     "#      ",
     "#      ",
     "###### ",
@@ -252,7 +252,7 @@ char *LETTER_b[] = {
     "#     #",
     "###### "
 };
-char *LETTER_c[] = {
+char *DEFAULT_c[] = {
     "       ",
     "       ",
     " ##### ",
@@ -261,7 +261,7 @@ char *LETTER_c[] = {
     "#      ",
     " ##### "
 };
-char *LETTER_d[] = {
+char *DEFAULT_d[] = {
     "      #",
     "      #",
     " ######",
@@ -270,7 +270,7 @@ char *LETTER_d[] = {
     "#     #",
     " ######"
 };
-char *LETTER_e[] = {
+char *DEFAULT_e[] = {
     "       ",
     "       ",
     " ##### ",
@@ -279,7 +279,7 @@ char *LETTER_e[] = {
     "#      ",
     " ##### "
 };
-char *LETTER_f[] = {
+char *DEFAULT_f[] = {
     "   ### ",
     "  #    ",
     " ####  ",
@@ -288,7 +288,7 @@ char *LETTER_f[] = {
     "  #    ",
     "  #    "
 };
-char *LETTER_g[] = {
+char *DEFAULT_g[] = {
     "       ",
     "       ",
     " ##### ",
@@ -297,7 +297,7 @@ char *LETTER_g[] = {
     "      #",
     " ##### "
 };
-char *LETTER_h[] = {
+char *DEFAULT_h[] = {
     "#      ",
     "#      ",
     "###### ",
@@ -306,7 +306,7 @@ char *LETTER_h[] = {
     "#     #",
     "#     #"
 };
-char *LETTER_i[] = {
+char *DEFAULT_i[] = {
     "   #   ",
     "       ",
     "   #   ",
@@ -315,7 +315,7 @@ char *LETTER_i[] = {
     "   #   ",
     "   #   "
 };
-char *LETTER_j[] = {
+char *DEFAULT_j[] = {
     "     # ",
     "       ",
     "     # ",
@@ -324,7 +324,7 @@ char *LETTER_j[] = {
     "#    # ",
     " ####  "
 };
-char *LETTER_k[] = {
+char *DEFAULT_k[] = {
     "#      ",
     "#   #  ",
     "#  #   ",
@@ -333,7 +333,7 @@ char *LETTER_k[] = {
     "#   #  ",
     "#    # "
 };
-char *LETTER_l[] = {
+char *DEFAULT_l[] = {
     "  #    ",
     "  #    ",
     "  #    ",
@@ -342,7 +342,7 @@ char *LETTER_l[] = {
     "  #    ",
     "   ##  "
 };
-char *LETTER_m[] = {
+char *DEFAULT_m[] = {
     "       ",
     "       ",
     "##  ## ",
@@ -351,7 +351,7 @@ char *LETTER_m[] = {
     "#    # ",
     "#    # "
 };
-char *LETTER_n[] = {
+char *DEFAULT_n[] = {
     "       ",
     "       ",
     "#####  ",
@@ -360,7 +360,7 @@ char *LETTER_n[] = {
     "#    # ",
     "#    # "
 };
-char *LETTER_o[] = {
+char *DEFAULT_o[] = {
     "       ",
     "       ",
     " ##### ",
@@ -369,7 +369,7 @@ char *LETTER_o[] = {
     "#     #",
     " ##### "
 };
-char *LETTER_p[] = {
+char *DEFAULT_p[] = {
     "       ",
     "       ",
     "###### ",
@@ -378,7 +378,7 @@ char *LETTER_p[] = {
     "#      ",
     "#      "
 };
-char *LETTER_q[] = {
+char *DEFAULT_q[] = {
     "       ",
     "       ",
     " ######",
@@ -387,7 +387,7 @@ char *LETTER_q[] = {
     " ######",
     "      #"
 };
-char *LETTER_r[] = {
+char *DEFAULT_r[] = {
     "       ",
     "       ",
     "#####  ",
@@ -396,7 +396,7 @@ char *LETTER_r[] = {
     "#      ",
     "#      "
 };
-char *LETTER_s[] = {
+char *DEFAULT_s[] = {
     "       ",
     "       ",
     " ##### ",
@@ -405,7 +405,7 @@ char *LETTER_s[] = {
     "      #",
     " ##### "
 };
-char *LETTER_t[] = {
+char *DEFAULT_t[] = {
     "  #    ",
     "  #    ",
     "#####  ",
@@ -414,7 +414,7 @@ char *LETTER_t[] = {
     "  #    ",
     "   ### "
 };
-char *LETTER_u[] = {
+char *DEFAULT_u[] = {
     "       ",
     "       ",
     "#     #",
@@ -423,7 +423,7 @@ char *LETTER_u[] = {
     "#     #",
     " ##### "
 };
-char *LETTER_v[] = {
+char *DEFAULT_v[] = {
     "       ",
     "       ",
     "#     #",
@@ -432,7 +432,7 @@ char *LETTER_v[] = {
     "  # #  ",
     "   #   "
 };
-char *LETTER_w[] = {
+char *DEFAULT_w[] = {
     "       ",
     "       ",
     "#     #",
@@ -441,7 +441,7 @@ char *LETTER_w[] = {
     "##   ##",
     "#     #"
 };
-char *LETTER_x[] = {
+char *DEFAULT_x[] = {
     "       ",
     "       ",
     " #   # ",
@@ -450,7 +450,7 @@ char *LETTER_x[] = {
     "  # #  ",
     " #   # "
 };
-char *LETTER_y[] = {
+char *DEFAULT_y[] = {
     "       ",
     "       ",
     "#     #",
@@ -459,7 +459,7 @@ char *LETTER_y[] = {
     "      #",
     " ##### "
 };
-char *LETTER_z[] = {
+char *DEFAULT_z[] = {
     "       ",
     "       ",
     "#######",
@@ -468,7 +468,7 @@ char *LETTER_z[] = {
     "  #    ",
     "#######"
 };
-char *DIGIT_0[] = {
+char *DEFAULT_0[] = {
     " ##### ",
     "#     #",
     "#   # #",
@@ -477,7 +477,7 @@ char *DIGIT_0[] = {
     "#     #",
     " ##### "
 };
-char *DIGIT_1[] = {
+char *DEFAULT_1[] = {
     "  ##   ",
     " # #   ",
     "   #   ",
@@ -486,7 +486,7 @@ char *DIGIT_1[] = {
     "   #   ",
     " ##### "
 };
-char *DIGIT_2[] = {
+char *DEFAULT_2[] = {
     " ##### ",
     "#     #",
     "      #",
@@ -495,7 +495,7 @@ char *DIGIT_2[] = {
     "#      ",
     "#######"
 };
-char *DIGIT_3[] = {
+char *DEFAULT_3[] = {
     " ##### ",
     "#     #",
     "      #",
@@ -504,7 +504,7 @@ char *DIGIT_3[] = {
     "#     #",
     " ##### "
 };
-char *DIGIT_4[] = {
+char *DEFAULT_4[] = {
     "#    # ",
     "#    # ",
     "#    # ",
@@ -513,7 +513,7 @@ char *DIGIT_4[] = {
     "     # ",
     "     # "
 };
-char *DIGIT_5[] = {
+char *DEFAULT_5[] = {
     "#######",
     "#      ",
     "#      ",
@@ -522,7 +522,7 @@ char *DIGIT_5[] = {
     "#     #",
     " ##### "
 };
-char *DIGIT_6[] = {
+char *DEFAULT_6[] = {
     " ######",
     "#      ",
     "#      ",
@@ -531,7 +531,7 @@ char *DIGIT_6[] = {
     "#     #",
     " ##### "
 };
-char *DIGIT_7[] = {
+char *DEFAULT_7[] = {
     "#######",
     "     # ",
     "    #  ",
@@ -540,7 +540,7 @@ char *DIGIT_7[] = {
     "  #    ",
     "  #    "
 };
-char *DIGIT_8[] = {
+char *DEFAULT_8[] = {
     " ##### ",
     "#     #",
     "#     #",
@@ -549,7 +549,7 @@ char *DIGIT_8[] = {
     "#     #",
     " ##### "
 };
-char *DIGIT_9[] = {
+char *DEFAULT_9[] = {
     " ##### ",
     "#     #",
     "#     #",
@@ -558,7 +558,7 @@ char *DIGIT_9[] = {
     "      #",
     " ##### "
 };
-char *LETTER_SPACE[] = {
+char *DEFAULT_SPACE[] = {
     "       ",
     "       ",
     "       ",
@@ -572,22 +572,22 @@ Style DEFAULT = {
     .height = 7,
     .width = 7,
     .chars = {
-        LETTER_A, LETTER_B, LETTER_C, LETTER_D, LETTER_E, LETTER_F,
-        LETTER_G, LETTER_H, LETTER_I, LETTER_J, LETTER_K, LETTER_L,
-        LETTER_M, LETTER_N, LETTER_O, LETTER_P, LETTER_Q, LETTER_R,
-        LETTER_S, LETTER_T, LETTER_U, LETTER_V, LETTER_W, LETTER_X,
-        LETTER_Y, LETTER_Z,
+        DEFAULT_A, DEFAULT_B, DEFAULT_C, DEFAULT_D, DEFAULT_E, DEFAULT_F,
+        DEFAULT_G, DEFAULT_H, DEFAULT_I, DEFAULT_J, DEFAULT_K, DEFAULT_L,
+        DEFAULT_M, DEFAULT_N, DEFAULT_O, DEFAULT_P, DEFAULT_Q, DEFAULT_R,
+        DEFAULT_S, DEFAULT_T, DEFAULT_U, DEFAULT_V, DEFAULT_W, DEFAULT_X,
+        DEFAULT_Y, DEFAULT_Z,
 
-        LETTER_a, LETTER_b, LETTER_c, LETTER_d, LETTER_e, LETTER_f,
-        LETTER_g, LETTER_h, LETTER_i, LETTER_j, LETTER_k, LETTER_l,
-        LETTER_m, LETTER_n, LETTER_o, LETTER_p, LETTER_q, LETTER_r,
-        LETTER_s, LETTER_t, LETTER_u, LETTER_v, LETTER_w, LETTER_x,
-        LETTER_y, LETTER_z,
+        DEFAULT_a, DEFAULT_b, DEFAULT_c, DEFAULT_d, DEFAULT_e, DEFAULT_f,
+        DEFAULT_g, DEFAULT_h, DEFAULT_i, DEFAULT_j, DEFAULT_k, DEFAULT_l,
+        DEFAULT_m, DEFAULT_n, DEFAULT_o, DEFAULT_p, DEFAULT_q, DEFAULT_r,
+        DEFAULT_s, DEFAULT_t, DEFAULT_u, DEFAULT_v, DEFAULT_w, DEFAULT_x,
+        DEFAULT_y, DEFAULT_z,
 
-        DIGIT_0, DIGIT_1, DIGIT_2, DIGIT_3, DIGIT_4,
-        DIGIT_5, DIGIT_6, DIGIT_7, DIGIT_8, DIGIT_9,
+        DEFAULT_0, DEFAULT_1, DEFAULT_2, DEFAULT_3, DEFAULT_4,
+        DEFAULT_5, DEFAULT_6, DEFAULT_7, DEFAULT_8, DEFAULT_9,
 
-        LETTER_SPACE
+        DEFAULT_SPACE
     }
 };
 
