@@ -37,6 +37,8 @@ char **get_ascii_char(Style *style, char c) {
 void print_art(Style *style, char *str, int scale) {
     int len = strlen(str);
 
+    putchar('\n');
+
     for (int row = 0; row < style->height; row++) {
         for (int srow = 0; srow < scale; srow++) {
             for (int i = 0; i < len; i++) {
