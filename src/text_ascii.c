@@ -58,3 +58,12 @@ void print_art(Style *style, char *str, int scale) {
     }
 }
 
+void to_lowercase(char *s) {
+    while (*s) {
+        if (*s >= 'A' && *s <= 'Z') {
+            *s += 32;
+        }
+        s++;
+    }
+}
+

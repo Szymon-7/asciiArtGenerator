@@ -7,10 +7,13 @@ int main(int argc, char **argv) {
     char *input = NULL;
     int scale = 1;          // default scale
     Style *font = &DEFAULT; // default font
+    char buffer[100];
 
     for (int i = 1; i < argc; i++) {
         if (strcmp(argv[i], "--font") == 0 && i + 1 < argc) {
-            if (strcmp(argv[i + 1], "ansi") == 0)
+            strcpy(buffer, argv[i + 1]);
+            to_lowercase(buffer);
+            if (strcmp(buffer, "ansi") == 0)
                 font = &ANSI;
             else if (strcmp(argv[i + 1], "default") == 0)
                 font = &DEFAULT;

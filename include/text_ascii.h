@@ -14,7 +14,6 @@ extern Style ANSI;
 
 char **get_ascii_char(Style *style, char c);
 void print_art(Style *style, char *str, int scale);
-
-void test_input(char *str);
+void to_lowercase(char *s);
 
 #endif
