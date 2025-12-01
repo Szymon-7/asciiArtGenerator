@@ -3,7 +3,7 @@
 #include <string.h>
 
 char **get_ascii_char(Style *style, char c) {
-    if (style == &ANSI) {
+    if (style == &ANSI || style == &BLOCK) {
         if (c == ' ')
             return style->chars[36];
 

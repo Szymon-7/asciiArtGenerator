@@ -15,8 +15,8 @@ int main(int argc, char **argv) {
             to_lowercase(buffer);
             if (strcmp(buffer, "ansi") == 0)
                 font = &ANSI;
-            else if (strcmp(argv[i + 1], "default") == 0)
-                font = &DEFAULT;
+            else if (strcmp(buffer, "block") == 0)
+                font = &BLOCK;
             i++;
         }
         else if (strcmp(argv[i], "--scale") == 0 && i + 1 < argc) {

@@ -17,8 +17,8 @@ bin/ascii_to_art: obj/main.o lib/libtext_ascii.$(LIB_EXT)
 obj/main.o: src/main.c | dirs
 	$(CC) $(CFLAGS) -c src/main.c -o obj/main.o
 
-lib/libtext_ascii.$(LIB_EXT): obj/text_ascii.o obj/style_default.o obj/style_ansi.o
-	$(CC) $(CFLAGS) -shared obj/text_ascii.o obj/style_default.o obj/style_ansi.o -o lib/libtext_ascii.$(LIB_EXT)
+lib/libtext_ascii.$(LIB_EXT): obj/text_ascii.o obj/style_default.o obj/style_ansi.o obj/style_block.o
+	$(CC) $(CFLAGS) -shared obj/text_ascii.o obj/style_default.o obj/style_ansi.o obj/style_block.o -o lib/libtext_ascii.$(LIB_EXT)
 
 obj/text_ascii.o: src/text_ascii.c
 	$(CC) $(CFLAGS) -c -fPIC src/text_ascii.c -o obj/text_ascii.o
@@ -28,6 +28,9 @@ obj/style_default.o: src/style_default.c
 
 obj/style_ansi.o: src/style_ansi.c
 	$(CC) $(CFLAGS) -c -fPIC src/style_ansi.c -o obj/style_ansi.o
+
+obj/style_block.o: src/style_block.c
+	$(CC) $(CFLAGS) -c -fPIC src/style_block.c -o obj/style_block.o
 
 .PHONY: dirs clean cleaner
 
