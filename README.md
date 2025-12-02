@@ -31,3 +31,5 @@ Run `make cleaner` to delete all .o, .so/.dylib, and executable files
 <img src="images/examples/Default.png" width="350"/>
 
 <img src="images/examples/ANSI.png" width="350"/>
+
+<img src="images/examples/BLOCK.png" width="350"/>
