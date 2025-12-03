@@ -11,8 +11,16 @@ else
     RPATH_FLAG = -Wl,-rpath,'$$ORIGIN/../lib'
 endif
 
+all: bin/ascii_to_art bin/image_to_art
+
 bin/ascii_to_art: obj/main.o lib/libtext_ascii.$(LIB_EXT)
 	$(CC) $(CFLAGS) obj/main.o -o bin/ascii_to_art -Llib -ltext_ascii $(RPATH_FLAG)
+
+bin/image_to_art: obj/main_image.o 
+	$(CC) $(CFLAGS) obj/main_image.o -o bin/image_to_art
+
+obj/main_image.o: src/main_image.c | dirs
+	$(CC) $(CFLAGS) -c src/main_image.c -o obj/main_image.o
 
 obj/main.o: src/main.c | dirs
 	$(CC) $(CFLAGS) -c src/main.c -o obj/main.o
