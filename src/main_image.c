@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
 
     char *ASCII = "@%#*+=-:. ";
     int width, height, channels;
-    unsigned char *img = stbi_load(argv[1], &width, &height, &channels, 1);
+    unsigned char *img = stbi_load(argv[1], &width, &height, &channels, 3);
     if (img == NULL) {
         printf("Error: Image not found\n");
         return 1;
@@ -33,11 +33,18 @@ int main(int argc, char **argv) {
             int src_x = x / scale;
             int src_y = y / (scale * 0.5);
 
-            unsigned char pixel = img[src_y * width + src_x];
-            int i = (pixel * 9) / 255;
-            fprintf(out, "%c", ASCII[i]);
+            int idx = (src_y * width + src_x) * 3;
+
+            unsigned char r = img[idx + 0];
+            unsigned char g = img[idx + 1];
+            unsigned char b = img[idx + 2];
+            
+            int brightness = (r + g + b) / 3;
+            int i = (brightness * 9) / 255;
+
+            fprintf(out, "\x1b[38;2;%d;%d;%dm%c", r, g, b, ASCII[i]);
         }
-        fprintf(out, "\n");
+        fprintf(out, "\x1b[0m\n");
     }
 
     printf("Generated: output.txt (%dx%d scaled to %dx%d)\n", width, height, scaled_w, scaled_h);
