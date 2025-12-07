@@ -4,20 +4,31 @@
 #include "stb_image.h"
 
 int main(int argc, char **argv) {
-    if (argc < 3) {
-        printf("Usage: %s <IMAGE_FILE> <scale>\n", argv[0]);
-        return 1;
+    char *file = NULL;
+    float scale = 1;
+
+    for (int i = 1; i < argc; i++) {
+        if (strcmp(argv[i], "--scale") == 0 && i + 1 < argc) {
+            scale = atof(argv[i + 1]);
+            if (scale <= 0 || scale > 1) {
+                printf("Scale must be between 0 and 1.\n");
+                return 1;
+            }
+            i++;
+        } 
+        else {
+            file = argv[i];
+        }
     }
 
-    float scale = atof(argv[2]);
-    if (scale <= 0 || scale > 1) {
-        printf("Scale must be between 0 and 1.\n");
+    if (!file) {
+        printf("Usage: %s <FILE> [--scale <N>]\n", argv[0]);
         return 1;
     }
 
     char *ASCII = "@%#*+=-:. ";
     int width, height, channels;
-    unsigned char *img = stbi_load(argv[1], &width, &height, &channels, 3);
+    unsigned char *img = stbi_load(file, &width, &height, &channels, 3);
     if (img == NULL) {
         printf("Error: Image not found\n");
         return 1;
@@ -47,7 +58,10 @@ int main(int argc, char **argv) {
         fprintf(out, "\x1b[0m\n");
     }
 
-    printf("Generated: output.txt (%dx%d scaled to %dx%d)\n", width, height, scaled_w, scaled_h);
+    if (scale != 1)
+        printf("Generated: output.txt (%dx%d scaled to %dx%d)\n", width, height, scaled_w, scaled_h);
+    else
+        printf("Generated: output.txt (%dx%d)\n", scaled_w, scaled_h);
 
     stbi_image_free(img);
     fclose(out);
