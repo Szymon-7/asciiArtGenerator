@@ -24,7 +24,11 @@ Run `make cleaner` to delete all .o, .so/.dylib, and executable files
 
 ## Usage
 
+Text to ascii art:  
 `./bin/ascii_to_art <INPUT> [--font <FONT>] [--scale <N>]`
+
+Image to ascii art: (will generate an `output.txt`)  
+`./bin/image_to_art <FILE> [--scale <N>]`
 
 ## Currently Available Fonts
 
@@ -33,3 +37,8 @@ Run `make cleaner` to delete all .o, .so/.dylib, and executable files
 <img src="images/examples/ANSI.png" width="350"/>
 
 <img src="images/examples/BLOCK.png" width="350"/>
+
+## Image to Art Example
+
+<img src="images/examples/DogInput.png" width="500"/>
+<img src="images/examples/DogOutput.png" width="500"/>
