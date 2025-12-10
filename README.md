@@ -28,7 +28,8 @@ Text to ascii art:
 `./bin/ascii_to_art <INPUT> [--font <FONT>] [--scale <N>]`
 
 Image to ascii art: (will generate an `output.txt`)  
-`./bin/image_to_art <FILE> [--scale <N>]`
+`./bin/image_to_art <FILE> [--scale <N>]`  
+`cat output.txt` to view result (may have to zoom out CTRL + minus)
 
 ## Currently Available Fonts
 
